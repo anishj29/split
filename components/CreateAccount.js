@@ -9,7 +9,7 @@ export default function CreateAccount({navigation}) {
       <View style={styles.halfCircleLeftTop} />
       <View style={styles.halfCircleRightTop} />
       <View style={{ flex: 1, justifyContent: 'center', padding: 35 }}>
-        <Text style={{ fontSize: 32, marginTop: 5, marginBottom: 50, textAlign: 'center', fontWeight: 'bold', color:'#3F3F3F'}}>Create Account</Text>
+        <Text style={{ fontSize: 32, marginTop: 5, marginBottom: 50, textAlign: 'center', fontWeight: 'bold', color:'#3F3F3F'}}>Create account</Text>
         <TextInput
           style={{
             height: 40,
@@ -170,7 +170,7 @@ const styles = StyleSheet.create({
     width: 100, // Diameter of the half circle
     height: 100, // Diameter of the half circle
     borderRadius: 50, // Half of the width or height to create a half-circle
-    backgroundColor: '#9CCC65', 
+    backgroundColor: '#5DB491', 
     transform: [{ translateY: -50 }], // Adjust for centering
   },
   halfCircleLeftBottom: {
@@ -190,7 +190,7 @@ const styles = StyleSheet.create({
     width: 100, // Diameter of the half circle
     height: 100, // Diameter of the half circle
     borderRadius: 50, // Half of the width or height to create a half-circle
-    backgroundColor: '#9CCC65', 
+    backgroundColor: '#5DB491', 
     transform: [{ translateY: 50 }], // Adjust for centering
   },
 });

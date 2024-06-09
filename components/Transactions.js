@@ -361,7 +361,7 @@ const styles = StyleSheet.create({
     width: 100, // Diameter of the half circle
     height: 100, // Diameter of the half circle
     borderRadius: 50, // Half of the width or height to create a half-circle
-    backgroundColor: "#9CCC65",
+    backgroundColor: "#5DB491",
     transform: [{ translateY: -50 }], // Adjust for centering
   },
 });

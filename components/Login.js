@@ -10,7 +10,7 @@ export default function Login({navigation}) {
       <View style={styles.halfCircleLeftTop} />
       <View style={styles.halfCircleRightTop} />
       <View style={{ flex: 1, justifyContent: 'center', padding: 35 }}>
-        <Text style={{ fontSize: 24, marginTop: 5, marginBottom: 50, textAlign: 'center', fontWeight: 'bold' }}>Log in</Text>
+        <Text style={{ fontSize: 24, marginTop: 5, marginBottom: 50, textAlign: 'center', fontWeight: 'bold', color:'#3F3F3F'}}>Log in</Text>
         <TextInput
           style={{
             height: 40,
@@ -55,7 +55,7 @@ export default function Login({navigation}) {
             borderRadius: 20,
             marginBottom: 15,
           }}
-          onPress={() => navigation.navigate('Activity')}
+          onPress={() => navigation.navigate('Home')}
         >
           <Text style={{ color: '#fff', textAlign: 'center' }}>Log in</Text>
         </TouchableOpacity>
@@ -114,7 +114,7 @@ const styles = StyleSheet.create({
     width: 100, // Diameter of the half circle
     height: 100, // Diameter of the half circle
     borderRadius: 50, // Half of the width or height to create a half-circle
-    backgroundColor: '#9CCC65', 
+    backgroundColor: '#5DB491', 
     transform: [{ translateY: -50 }], // Adjust for centering
   },
   halfCircleLeftBottom: {
@@ -134,7 +134,7 @@ const styles = StyleSheet.create({
     width: 100, // Diameter of the half circle
     height: 100, // Diameter of the half circle
     borderRadius: 50, // Half of the width or height to create a half-circle
-    backgroundColor: '#9CCC65', 
+    backgroundColor: '#5DB491', 
     transform: [{ translateY: 50 }], // Adjust for centering
   },
 });
