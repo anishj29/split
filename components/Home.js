@@ -47,6 +47,37 @@ export default function Home({navigation}) {
             <Text style={{ color: '#fff', textAlign: 'center' }}>Split Now</Text>
           </TouchableOpacity>
         </View>
+        <View>
+          <View style={styles.withdrawlHeader}>
+            <Text style={[styles.balance, {color: "black"}]}>Friends</Text>
+            <Text>See all</Text>
+          </View>
+        </View>
+        <View style={styles.withdrawlHeader}>
+          <Text style={[styles.balance, {color: "black"}]}>Recent bills</Text>
+          <Text>See all</Text>
+        </View>
+        <View style={styles.totalBill}>
+          <View style={styles.withdrawlHeader}>
+            <Text style={[styles.balance, {color: "black"}]}>Food</Text>
+            <Text>1h ago</Text>
+          </View>
+          <Text style={styles.transfer}>Chic-fil-A</Text>
+          <Text style={styles.dollar}>$556.90</Text>
+
+          <TouchableOpacity
+            style={{
+              backgroundColor: '#3F3F3F',
+              paddingVertical: 10,
+              borderRadius: 8,
+              marginTop: 15,
+              width: 150
+            }}
+            onPress={() => navigation.navigate('Home')}
+          >
+            <Text style={{ color: '#fff', textAlign: 'center' }}>Split Now</Text>
+          </TouchableOpacity>
+        </View>
       </View>
     </View>  
   );
@@ -109,6 +140,13 @@ const styles = StyleSheet.create({
   iconsContainer: {
     flexDirection: "row",
     alignItems: "center",
+  },
+  withdrawlHeader: {
+    display: "flex",
+    flexDirection: "row",
+    width: 400,
+    alignItems: 'center',
+    justifyContent: "space-between"
   },
   icon: {
     marginLeft: 10,
